@@ -1,0 +1,16 @@
+version: '3'
+services:
+  android:
+    image: butomo1989/docker-android-x86-9.0
+    privileged: true
+    ports:
+      - "6080:6080"
+      - "5554:5554"
+      - "5555:5555"
+    environment:
+      - DEVICE="Nexus 5"
+      - RESOLUTION="1280x720"
+      - DENSITY="320"
+      - API_LEVEL="28"
+      - TAG="default"
+      - ABI="x86"
